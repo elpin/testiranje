@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello Prijedor</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>GradPrijedor.info</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2">Prijedor kamere</a></li>
+            <li><a href="#page3">Prijedor</a></li>
+			<li><a href="#page4">Prijedor</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4><a href="http://www.elpin.biz">www.elpin.biz</a></h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1>Prijedor kamere</h1>
+	</div>
+   <body>
+<script language="JavaScript" type="text/javascript">
+   function reload() {setTimeout('reloadImg("refresh")',500)};    // 1000 = 1 second. I'd suggest a reasonable minumum of 350
+   function reloadImg(id)
+   {
+    var obj = document.getElementById(id);
+    var rand = Math.random();
+    obj.src = "http://izlog.dyndns.org:90/snapshot.cgi?user=guest&pwd=guest&t="+rand;
+   }
+ </script>
+<img src="http://izlog.dyndns.org:90/snapshot.cgi?user=guest&pwd=guest&t=" name="refresh" id="refresh" onload='reload()'>
+</center>
+</body>
+	<div data-role="content">	
+		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>Page Three</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>Page Four</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+</body>
+</html>
